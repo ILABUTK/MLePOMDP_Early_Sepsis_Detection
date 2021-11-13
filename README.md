@@ -47,7 +47,7 @@ The following Python libraries are required to run the source codes:
 
 ## Usage
 
-# Ground Truth of Sepsis
+### Ground Truth of Sepsis
 
 After accessing the eICU database, put the following data files in the directory `scripts/0_sepsis_ground_truth/`:
 1. `lab.csv`;
@@ -59,11 +59,11 @@ After accessing the eICU database, put the following data files in the directory
 
 Then, run the `main.py` file to generate the ground truth of sepsis and patient data used in later stages. Note that to process the eICU data, a relatively large RAM is required.
 
-# Preprocessing
+### Preprocessing
 
 Run through step 0 to 3 in the `scripts/1_preprocessing/` folder. Before running each file, remember to change the data directory to the correct one, indicated in the files.
 
-# First Stage
+### First Stage
 
 First, prepare the data as follows:
 1. Copy all the files in `scripts/1_preprocessing/processed_data/3_12h_feature/` and paste to `scripts/2_first_stage/data/feature_data/patient_feature/`.
@@ -72,7 +72,7 @@ First, prepare the data as follows:
 
 Then, run the `RF.py` or the `NN.py` file to generate sepsis probability files for the second stage.
 
-# Second Stage
+### Second Stage
 
 First, copy all files in `scripts/2_first_stage/data/pr/` and paste to `scripts/3_second_stage/data/`.
 
