@@ -34,7 +34,7 @@ def temporal_test(horizon, train=True, num_tree=1000):
     # =========================== Train ? =============================
     if train:
         # load patient ID
-        separate_id = pickle.load(open('data/ids/train_ID.pickle', 'rb'))
+        separate_id = pickle.load(open('data/ids/1h_ID.pickle', 'rb'))
         sepsis_id, nonsep_id = separate_id['sepsis'], separate_id['nonsep']
         # load data
         train_data = pd.read_csv(
@@ -77,7 +77,7 @@ def temporal_test(horizon, train=True, num_tree=1000):
     # =========================== Test =============================
     print("Tesing...")
     # load patient id
-    separate_id = pickle.load(open('data/ids/test_ID.pickle', 'rb'))
+    separate_id = pickle.load(open('data/ids/12h_ID.pickle', 'rb'))
     sepsis_id, nonsep_id = separate_id['sepsis'], separate_id['nonsep']
     all_id = sepsis_id + nonsep_id
     # prediction results
