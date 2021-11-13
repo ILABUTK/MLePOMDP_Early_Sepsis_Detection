@@ -38,12 +38,13 @@ The first stage of MLePOMDP is a machine learning (ML) model and the second stag
 ## Python Prerequisite
 
 The following Python libraries are required to run the source codes:
-1. `numpy`
-2. `scipy`
-3. `torch`
-4. `pandas`
-5. `pickle`
-6. `sklearn`
+1. `numpy`;
+2. `scipy`;
+3. `torch`;
+4. `pandas`;
+5. `pickle`;
+6. `sklearn`;
+7. `matplotlib`.
 
 ## Usage
 
@@ -58,15 +59,15 @@ After accessing the eICU database, put the following data files in the directory
 6. `patient.csv`;
 7. `respiratoryCharting.csv`;
 8. `treatment.csv`;
-9. `vitalPeriodic.csv`;
+9. `vitalPeriodic.csv`.
 
 Dummy files are prepared at the directory to show the setup.
 
-Then, run the `main.py` file to generate the ground truth of sepsis and patient data used in later stages. Note that to process the eICU data, a relatively large RAM is required.
+Then, run the `main.py` file to generate the ground truth of sepsis, as well as the patient data used in later stages. Note that to process the eICU data, a relatively large RAM is required.
 
 ### Preprocessing
 
-Run through steps 0 to 3 in the `scripts/1_preprocessing/` folder. Before running each file, remember to change the data directory to the correct one, indicated in the files.
+Run through steps 0 to 3 in the `scripts/1_preprocessing/` folder. Before running each file, remember to change the data directory to the appropriate one, indicated in the files.
 
 ### First Stage
 
