@@ -50,12 +50,13 @@ The following Python libraries are required to run the source codes:
 # Ground Truth of Sepsis
 
 After accessing the eICU database, put the following data files in the directory `scripts/0_sepsis_ground_truth/`:
-1. lab.csv;
-2. nurseCharting.csv;
-3. infusionDrug.csv;
-4. vitalPeriodic.csv;
-5. medication.csv;
-6. microlab.csv.
+1. `lab.csv`;
+2. `nurseCharting.csv`;
+3. `infusionDrug.csv`;
+4. `vitalPeriodic.csv`;
+5. `medication.csv`;
+6. `microlab.csv`.
+
 Then, run the `main.py` file to generate the ground truth of sepsis and patient data used in later stages. Note that to process the eICU data, a relatively large RAM is required.
 
 # Preprocessing
@@ -64,7 +65,10 @@ Run through step 0 to 3 in the `scripts/1_preprocessing/` folder. Before running
 
 # First Stage
 
-First, copy all the files in `scripts/1_preprocessing/processed_data/3_12h_feature/` and paste to `scripts/2_first_stage/data/feature_data/patient_feature/`. Copy the file `scripts/1_preprocessing/processed_data/3_train/train_data.csv` to `scripts/2_first_stage/data/feature_data/`. Copy all the files in `scripts/1_preprocessing/processed_data/ids/` and paste to `scripts/2_first_stage/data/ids/`. Dummy files are prepared at each directory to show the correct setup.
+First, prepare the data as follows:
+1. Copy all the files in `scripts/1_preprocessing/processed_data/3_12h_feature/` and paste to `scripts/2_first_stage/data/feature_data/patient_feature/`.
+2. Copy the file `scripts/1_preprocessing/processed_data/3_train/train_data.csv` and paste to `scripts/2_first_stage/data/feature_data/`. 
+3. Copy all the files in `scripts/1_preprocessing/processed_data/ids/` and paste to `scripts/2_first_stage/data/ids/`. Dummy files are prepared at each directory to show the correct setup.
 
 Then, run the `RF.py` or the `NN.py` file to generate sepsis probability files for the second stage.
 
