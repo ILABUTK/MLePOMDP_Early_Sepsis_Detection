@@ -61,7 +61,7 @@ After accessing the eICU database, put the following data files in the directory
 8. `treatment.csv`;
 9. `vitalPeriodic.csv`.
 
-Dummy files are prepared at the directory to show the setup.
+Empty data files are prepared at the directory to showcase the setup.
 
 Then, run the `main.py` file to generate the ground truth of sepsis, as well as the patient data used in later stages. Note that to process the eICU data, a relatively large RAM is required.
 
@@ -76,13 +76,13 @@ First, prepare the data as follows:
 2. Copy the file `scripts/1_preprocessing/processed_data/3_train/train_data.csv` and paste to `scripts/2_first_stage/data/feature_data/`;
 3. Copy all the files in `scripts/1_preprocessing/processed_data/ids/` and paste to `scripts/2_first_stage/data/ids/`.
 
-Dummy files are prepared at each directory to show the setup.
+Empty data files are prepared at each directory to showcase the setup.
 
 Then, run the `RF.py` or the `NN.py` file to generate sepsis probability files for the second stage.
 
 ### Second Stage
 
-First, copy all files in `scripts/2_first_stage/data/pr/` and paste to `scripts/3_second_stage/data/`. Dummy files are prepared at the directory to show the setup.
+First, copy all files in `scripts/2_first_stage/data/pr/` and paste to `scripts/3_second_stage/data/`. Empty data files are prepared at each directory to showcase the setup.
 
 Then, run the `main.py` file to obtain the results. The final prediction results are stored in `scripts/3_second_stage/results/`. Solutions to the second-stage POMDP can be found at `scripts/3_second_stage/solutions/`. 
 

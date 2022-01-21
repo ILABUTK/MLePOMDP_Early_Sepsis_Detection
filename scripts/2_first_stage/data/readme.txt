@@ -1,0 +1,2 @@
+The data files in this directory are empty. It it to showcase where each data file should go.
+Please go to the eICU website (https://eicu-crd.mit.edu/) for the original dataset and follow the instructions under "Usage" to generate the necessary data.
